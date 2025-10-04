@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-family: 'DM Sans', sans-serif;
   background-color: #fff;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 /* Slider */
@@ -82,7 +82,7 @@ body {
 
 /* Heal Section */
 .heal-section {
-  padding: 20px 10px;
+  padding: 10px 10px;
   background: #f9e3c8;
 }
 
@@ -206,7 +206,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
   max-width: 800px;
 }
@@ -262,7 +262,7 @@ body {
   font-size: 36px;
   line-height: 48px;
   color: #0b1935;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -300,7 +300,7 @@ body {
   font-size: 34px;
   line-height: 48px;
   color: #0b1935;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .testimonial-grid {
@@ -314,18 +314,18 @@ body {
 }
 
 .testimonial-item {
-  background: #fff;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: none;   /* remove white box */
+  padding: 0;         /* remove padding */
+  border-radius: 0;   /* remove rounded corners */
+  box-shadow: none;   /* remove shadow */
   text-align: center;
 }
 
 .testimonial-item img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 16px;
-  margin-bottom: 15px;
+  width: auto;        /* keep original image size */
+  max-width: none;    /* don’t force limit */
+  border-radius: 0;   /* remove rounded corners */
+  margin-bottom: 0;   /* remove space under images */
 }
 
 .testimonial-text {
@@ -346,9 +346,9 @@ body {
   font-family: 'DM Serif Display', serif;
   font-weight: 400;
   font-size: 34px;
-  line-height: 48px;
+  line-height: 40px;
   color: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   text-align: center;
 }
 
@@ -356,7 +356,7 @@ body {
   font-family: 'DM Serif Display', serif;
   font-weight: 600;
   font-size: 34px;
-  line-height: 48px;
+  line-height: 40px;
   color: #e80150;
   text-align: center;
   text-decoration: underline;
@@ -372,7 +372,7 @@ body {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 
 .coach-box {
@@ -691,11 +691,11 @@ body {
     <a href="https://www.google.com/" class="cta-btn">Yes, I Want to Feel Healthy and Happy</a>
   </div>
 </section>
-<section class="coach-section" style="padding: 60px 20px; background: #0d1b36; color: #fff;">
+<section class="coach-section" style="padding: 20px 20px; background: #0d1b36; color: #fff;">
   <!-- Heading Row -->
-  <div class="row" style="flex-direction: column; align-items: center; text-align: center; margin-bottom: 40px;">
-    <h2 class="coach-heading" style="font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 34px; line-height: 48px;">MEET YOUR COACH</h2>
-    <h3 class="coach-name" style="font-family: 'DM Serif Display', serif; font-weight: 600; font-size: 34px; line-height: 48px; color: #e80150; text-decoration: underline;">Annu Yadav</h3>
+  <div class="row" style="flex-direction: column; align-items: center; text-align: center; margin-bottom: 10px;">
+    <h2 class="coach-heading" style="font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 34px; line-height: 40px;">MEET YOUR COACH</h2>
+    <h3 class="coach-name" style="font-family: 'DM Serif Display', serif; font-weight: 600; font-size: 34px; line-height: 40px; color: #e80150; text-decoration: underline;">Annu Yadav</h3>
   </div>
 
   <!-- Coach Columns -->
@@ -738,7 +738,7 @@ body {
     </div>
   </div>
 </section>
-<section class="enroll-section" style="background: #fde6ee; padding: 80px 20px; text-align: center;">
+<section class="enroll-section" style="background: #fde6ee; padding: 40px 20px; text-align: center;">
   <div class="row" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px;">
     
     <h2 style="font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 34px; line-height: 48px; color: #0b1935;">
@@ -761,7 +761,7 @@ body {
 </section>
 
 
-<section class="faq-section" style="padding: 60px 20px; background: #fff;">
+<section class="faq-section" style="padding: 30px 20px; background: #fff;">
   <h2 style="font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 24px; text-align: center; margin-bottom: 40px; color: #0b1935;">
     Frequently Asked Questions
   </h2>
