@@ -475,6 +475,16 @@ body {
   .coach-right {
     gap: 12px;             /* reduce spacing between box, content, button */
   }
+     .coach-left {
+    display: flex;         /* make parent flex to center image */
+    justify-content: center; /* horizontal centering */
+  }
+    .coach-left img {
+    display: block;
+            /* optional: avoid full-width overflow */
+    height: auto;
+    margin-right: -10px;
+  }
 
   .coach-content {
     font-size: 16px;
