@@ -455,8 +455,29 @@ body {
 @media (max-width: 600px) {
   .heal-heading { font-size: 28px; line-height: 34px; }
   .heal-subheading { font-size: 16px; line-height: 24px; }
-  .step-heading { font-size: 24px; line-height: 30px; }
-  .cta-btn { font-size: 16px; padding: 14px 28px; }
+  .step-heading { font-size: 22px; line-height: 28px; }
+  .cta-btn { font-size: 16px; padding: 12px 24px; }
+
+  .issue-item {
+    display: flex;
+    align-items: flex-start; /* keeps checkbox aligned with first line of text */
+    justify-content: flex-start;
+    font-size: 16px; 
+    line-height: 22px;
+    padding: 12px 16px;
+    text-align: left;
+  }
+
+  .issue-item input[type="checkbox"] {
+    position: relative; /* reset absolute */
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-right: 10px; /* spacing between checkbox & text */
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
   .issue-item { font-size: 18px; line-height: 26px; }
   .take-control-text { font-size: 20px; line-height: 28px; }
   .al-grid { grid-template-columns: 1fr; }
@@ -465,6 +486,30 @@ body {
     flex-direction: column;
     align-items: center;   /* centers image and content */
     gap: 20px;             /* smaller gap between image and content */
+  }
+    .after-secrets-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .after-secrets-grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+    gap: 14px;
+  }
+
+  .after-item {
+    display: flex;
+    align-items: flex-start; /* aligns star with first line */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 14px 16px;
+  }
+
+  .after-item::before {
+    content: "🌟";
+    margin-right: 10px;
+    flex-shrink: 0;
   }
   .testimonial-grid {
     grid-template-columns: 1fr; /* 1 testimonial per row */
@@ -703,14 +748,14 @@ body {
     </h2>
 
     <div class="after-secrets-grid">
-      <div class="after-item">🌟 Feel comfortable and energized throughout the day</div>
-      <div class="after-item">🌟 Walk into meetings and social situations with confidence, no longer worried about bloating</div>
-      <div class="after-item">🌟 Enjoy peaceful, uninterrupted sleep every night</div>
-      <div class="after-item">🌟 Experience regular, pain-free periods that don't control your life</div>
-      <div class="after-item">🌟 No more digestive issues like acid reflux, gas, or embarrassing symptoms</div>
-      <div class="after-item">🌟 Wake up refreshed with steady energy all day</div>
-      <div class="after-item">🌟 Enjoy intimate moments without feeling self-conscious about your body</div>
-      <div class="after-item">🌟 Feel like yourself again – vibrant, confident, and fully alive</div>
+      <div class="after-item">Feel comfortable and energized throughout the day</div>
+      <div class="after-item">Walk into meetings and social situations with confidence, no longer worried about bloating</div>
+      <div class="after-item">Enjoy peaceful, uninterrupted sleep every night</div>
+      <div class="after-item">Experience regular, pain-free periods that don't control your life</div>
+      <div class="after-item">No more digestive issues like acid reflux, gas, or embarrassing symptoms</div>
+      <div class="after-item">Wake up refreshed with steady energy all day</div>
+      <div class="after-item">Enjoy intimate moments without feeling self-conscious about your body</div>
+      <div class="after-item">Feel like yourself again – vibrant, confident, and fully alive</div>
     </div>
 
     <a href="https://www.google.com/" class="cta-btn">I Want to Reclaim My Body Now</a>
